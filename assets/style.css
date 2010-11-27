@@ -160,9 +160,10 @@ h1 em {
 #deaths { width: 650px; }
 #deaths .number, #deaths .time span {text-align: left; }
 #cost { width: 524px; }
+#cost .title { font-size: 2.2em; height: 49px;}
 #refugees { width: 370px; }
 
-#deaths .time { float: right; }
+#deaths .number { float: right; }
 
 #bottomtickers {
 	margin: auto;
@@ -201,3 +202,8 @@ p.quoted {
 	margin-top: 0px;
 	margin-bottom: 15px;
 }
+
+#footer p#footnote { font-size: medium; }
+
+#notesdialog p { line-height: 17px; }
+#notesdialog .footnotes { line-height: 10px; }
