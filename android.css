@@ -1,0 +1,125 @@
+body {
+	background: #4d1d26 url(http://climateticker.walledcity.ca/assets/page_bg.jpg) repeat;
+	background-position: right -300px;
+	font: 14px helvetica, arial, sans-serif;
+	color: #464544;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#header h1 {
+	margin: 0;
+	padding: 0;
+}
+
+#header h1 strong a {
+	background-color: #232323;
+	border-bottom: 1 px solid #666;
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	margin: 0;
+	top: 0;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	background-image: -webkit-gradient(linear, left top left bottom, from(#fff), to(#999));
+}
+
+ul b { 
+	margin: -16px;
+}
+
+pre, #notesdialog, #refugeesembed, #deathsembed, #costembed, #metainfo, #about, #notes, #contact, #share, #footer, .embed {
+	display: none;
+}
+
+#deaths {
+	background-color: #fff;
+	padding: 10px;
+	width:90%;
+	height:40px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.time, .number {
+	font-size: 16px; 
+	font-weight: bold;
+	color: #900;
+}
+
+#bottomtickers {
+	left:0;
+}
+
+#bottomtickers td {
+	padding: 7px;
+}
+
+#cost {
+	background-color: #fff;
+	padding: 10px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+#refugees {
+	background-color: #fff;
+	padding: 10px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+#mobile-more-info {
+	background-color: #fff;
+	padding: 10px;
+	width:90%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 15px;
+	font-size: 14px;
+}
+
+#mobile-more-info a {
+	color: #900;
+	text-decoration: none;
+}
+
+#mobile-more-info p {
+	padding-left: 5px;
+	padding-right: 5px;
+	line-height: 1.2em;
+}
+
+#quote {
+	font-size: 14px;
+	clear: both;
+	font-weight: bold;
+	padding: 5px;
+	color: #900;
+}
+
+#reference {
+	clear: both;
+	width: 100%;
+	text-align: right;
+	padding-right:10px;
+	padding-top: 5px;
+	padding-bottom: 7px;
+}
+.title { 
+	color: #464544; 
+	text-align: center; 
+	font-size: 16px; 
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
