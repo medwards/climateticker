@@ -42,7 +42,7 @@ body {
 }
 
 h1 {
-	padding: 25px 0 0 30px;
+	padding: 25px 0 0 0px;
 	font: 46px "arial black", arial, sans-serif;
 	color: #fff;
 	text-align: center;
@@ -53,7 +53,7 @@ h1 em {
 	font-weight: bold;
 	font-style: normal;
 	position: relative;
-	top: -8px;
+	top: -15px;
 }
 
 #header h1 em a { text-decoration: none; }
@@ -123,37 +123,8 @@ h1 em {
 	margin-top: 150px;
 	border-top: 3px solid #40151e;
 	border-bottom: 3px solid #40151e;
-	background: #fdbb98;
+	background: transparent url(red-diag.png);
 	padding: 18px;
-}
-
-#body a, #body a:hover {
-	color: black;
-	text-decoration: none;
-	border-bottom: 1px dotted black;
-}
-
-
-#body h2 {
-  font-size: 12px;
-  text-align: right;
-  margin-bottom: 1.5em;
-}
-#body h3 {
-	font-size: 9px;
-	color: #ff8fce;
-}
-#body .more a {
-  font-weight: bold;
-  text-decoration: none;
-}
-#body .more a:hover {
-  text-decoration: underline;
-}
-#body .hr-yellow {
-	border-top: 1px solid #ff8fce;
-	padding-bottom: 1em;
-	margin-top: 1em;
 }
 
 /** footer **/
@@ -171,9 +142,18 @@ h1 em {
   list-style: none;
 }
 
-.ticker {  margin: 0 auto; margin-top: 5px; height: 115px; border: 1px solid black; background: white; padding: 20px; padding-top: 15px; padding-bottom: 10px;}
-.ticker .title { color: black; text-align: center; line-height: 1em; font-size: 3.5em; font-weight: bold;}
-.ticker .number, .ticker .time span { text-align: center; font-size: 5em; font-weight: bold; color: #990000; margin-top: 0px; margin-bottom: 30px; }
+.ticker {  margin: 0 auto; color: white; margin-top: 5px; height: 115px; border: 1px solid black; padding: 20px; padding-top: 15px; padding-bottom: 10px; background: transparent url(black-diag.png); }
+.ticker .title { text-align: center; line-height: 1em; font-size: 3.5em; font-weight: bold;}
+.ticker .number, .ticker .time span { text-align: center; font-size: 5em; font-weight: bold; color: red; margin-top: 0px; margin-bottom: 30px; }
+
+.embed a, .embed a:hover {
+	text-decoration: none;
+	border-bottom: 1px dotted white;
+}
+
+.embed a:hover {
+	border-bottom: 1px solid white;
+}
 
 .ticker .embed { float: right; font-weight: bold;}
 
