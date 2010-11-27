@@ -22,11 +22,12 @@ a {
 }
 .clear {
 	clear: both;
+	height: 0px;
 }
 
 body {
 	background: #4d1d26 url(page_bg.jpg) repeat-x;
-	background-position: right -350px;
+	background-position: right -320px;
 	font: 11px arial, sans-serif;
 	color: #464544;
 	padding-bottom: 10px;
