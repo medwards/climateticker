@@ -1,5 +1,5 @@
 $(function() { 
-	$('.ticker').corners("15px 15px");
+	$('.ticker').corner("round 15px");
 	$('.dialog').dialog({ autoOpen: false, modal: true, title: $('dialog').attr('title'), width: 560});
 	$('#cost .embed').click(function() {
 		$('#costembed').dialog('open');
