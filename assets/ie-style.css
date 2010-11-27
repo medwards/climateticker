@@ -2,10 +2,10 @@
 .ticker .title {
         font-size: 3.0em;
         line-height: 0.5em;
-        height: 49px;
+        margin-top: 10px;
+        height: 35px;
 }
 
-#info { 
+#info {
         padding-top: 5px;
 }
-

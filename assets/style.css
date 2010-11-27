@@ -144,7 +144,7 @@ h1 em {
 }
 
 .ticker {  margin: 0 auto; color: white; margin-top: 5px; height: 115px; border: 1px solid black; padding: 20px; padding-top: 15px; padding-bottom: 10px; background: transparent url(black-diag.png); }
-.ticker .title { text-align: center; line-height: 1em; font-size: 3.5em; font-weight: bold;}
+.ticker .title { text-align: center; line-height: 1em; font-size: 3.5em; font-weight: bold;  height: 40px;}
 .ticker .number, .ticker .time span { text-align: center; font-size: 5em; font-weight: bold; color: red; margin-top: 0px; margin-bottom: 30px; }
 
 .embed a, .embed a:hover {
@@ -161,7 +161,7 @@ h1 em {
 #deaths { width: 650px; }
 #deaths .number, #deaths .time span {text-align: left; }
 #cost { width: 524px; }
-#cost .title { font-size: 2.2em; height: 49px;}
+#cost .title { font-size: 2.2em;}
 #refugees { width: 370px; }
 
 #deaths .number { float: right; }
