@@ -3,6 +3,8 @@ var deaths = 0;
 var timetodeath = 0;
 var refugees = 0;
 var tickerStarted = false; // bit of a hack but the instructions allow people to call updateTicker more than once which can mean there might be a lot of timers
+//var defaultStart = new Date("Nov 26, 2009, 18:00:00");
+//var defaultEnd = new Date("Nov 26, 2010, 18:00:00");
 var defaultStart = Date("Nov 29, 2010, 10:00:00");
 var defaultEnd = Date("Nove 29, 2010, 10:00:00");
 
@@ -92,10 +94,10 @@ function addRefugeesTicker() {
 	addTicker(refugeesTicker);
 }
 
-var style = '.ticker { width: 650px; font-family: arial, sans-serif; margin: 0 auto; margin-top: 10px; height: 135px; border: 1px solid black; background: white; padding: 20px; padding-top: 15px; padding-bottom: 10px;} .ticker .title { color: black; text-align: center; line-height: 1em; font-size: 3.5em; font-weight: bold;} .ticker .number, .ticker .time span { font-size: 5em; font-weight: bold; color: #990000; margin-top: 0px; margin-bottom: 30px; } .ticker .embed { float: right; font-weight: bold;}  #deaths .number { float: right; } #refugees { width: 400px; } #deaths { width: 550px; }';
+var style = '.ticker { width: 650px; font-family: arial, sans-serif; margin: 0 auto; margin-top: 10px; height: 160px; border: 1px solid black; background: black; padding: 20px; padding-top: 5px; padding-bottom: 10px;} .ticker .title { float: left; color: white; text-align: center; line-height: 1em; font-size: 3.5em; font-weight: bold;} .ticker .number, .ticker .time span { font-size: 5em; font-weight: bold; color: red; margin-top: 0px; margin-bottom: 30px; } .ticker .time { color: white; } .ticker .embed { float: right; font-weight: bold;}  #deaths .number { float: right; } #refugees { width: 400px; } #deaths { width: 550px; } a { color: white; } a:hover { color: red; }';
 
-var deathTicker = '<div class="top ticker" id="deaths"> <div class="embed"><a href="http://climateticker.walledcity.ca">via Climate Ticker</a></div> <div class="title">Deaths</div> <div> <div class="number"><span id="deathnum">300,000</span></div> <div class="time"><span id="timetodeath">0:02</span> until next death</div> </div> </div>';
+var deathTicker = '<div class="top ticker" id="deaths"><div><div class="embed"><a href="http://costsofclimatechange.org">Costs of Climate Change</a></div><div class="title">Deaths</div></div> <div style="clear: both;"></div> <div><div class="number"><span id="deathnum">300,000</span></div> <div class="time"><span id="timetodeath">0:02</span> until next death</div> </div></div>';
 
-var costTicker = '<div class="left ticker" id="cost"> <div class="embed"><a href="http://climateticker.walledcity.ca">via Climate Ticker</a></div> <div class="title">Cost</div> <div class="number"><span id="costnum">$125,000,000,000</span></div> </div>';
+var costTicker = '<div class="left ticker" id="cost"> <div><div class="embed"><a href="http://costsofclimatechange.org">Costs of Climate Change</a></div> <div class="title">Cost</div></div> <div class="number"><span id="costnum">$125,000,000,000</span></div> </div>';
 
-var refugeesTicker = '<div class="left ticker" id="refugees"> <div class="embed"><a href="http://climateticker.walledcity.ca">via Climate Ticker</a></div> <div class="title">Refugees</div> <div class="number"><span id="refugeenum">0</span></div> </div>';
+var refugeesTicker = '<div class="left ticker" id="refugees"> <div class="embed"><a href="http://costsofclimatechange.org">Costs of Climate Change</a></div> <div class="title">Refugees</div> <div class="number"><span id="refugeenum">0</span></div> </div>';
