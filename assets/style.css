@@ -125,7 +125,9 @@ h1 em {
 	border-top: 3px solid #40151e;
 	border-bottom: 3px solid #40151e;
 	background: transparent url(red-diag.png);
-	padding: 18px;
+	padding: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 /** footer **/
@@ -162,7 +164,7 @@ h1 em {
 #deaths .number, #deaths .time span {text-align: left; }
 #cost { width: 524px; }
 #cost .title { font-size: 2.2em;}
-#refugees { width: 370px; }
+#refugees { width: 390px; }
 
 #deaths .number { float: right; }
 
