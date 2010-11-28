@@ -2,11 +2,11 @@ var cost = 0;
 var deaths = 0;
 var timetodeath = 0;
 var refugees = 0;
-//var defaultStart = new Date("Nov 26, 2009, 18:00:00"); // will be new Date("Nov 29, 2010, 10:00:00");
-//var defaultEnd = new Date("Nov 26, 2010, 18:00:00"); // will be new Date("Nove 29, 2010, 10:00:00");
+var defaultStart = new Date("Nov 26, 2009, 18:00:00"); // will be new Date("Nov 29, 2010, 10:00:00");
+var defaultEnd = new Date("Nov 26, 2010, 18:00:00"); // will be new Date("Nove 29, 2010, 10:00:00");
 
-var defaultStart = new Date("Nov 26, 2010, 18:30:00"); // will be new Date("Nov 29, 2010, 10:00:00");
-var defaultEnd = new Date("Nov 26, 2011, 18:30:00"); // will be new Date("Nove 29, 2010, 10:00:00");
+//var defaultStart = Date("Nov 29, 2010, 10:00:00");
+//var defaultEnd = Date("Nov 29, 2011, 10:00:00");
 
 
 $.fn.digits = function(precision, prefix){
@@ -53,7 +53,7 @@ function calculateDeaths(){
 }
 
 function calculateRefugees() {
-	refugees = calculateThing(0, 20000000, defaultStart, defaultEnd);
+	refugees = calculateThing(0, 4243902.44, defaultStart, defaultEnd);
 }
 
 function updateTicker(a){

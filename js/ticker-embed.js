@@ -3,6 +3,8 @@ var deaths = 0;
 var timetodeath = 0;
 var refugees = 0;
 var tickerStarted = false; // bit of a hack but the instructions allow people to call updateTicker more than once which can mean there might be a lot of timers
+var defaultStart = Date("Nov 29, 2010, 10:00:00");
+var defaultEnd = Date("Nove 29, 2010, 10:00:00");
 
 function addCommas(nStr)
 {
@@ -26,16 +28,16 @@ function calculateThing(current, projected, start, end) {
 }
 
 function calculateCost(){
-	cost = calculateThing(0, 125000000000, new Date("Oct 01, 2010"), new Date("Oct 01, 2011"));
+	cost = calculateThing(0, 125000000000, defaultStart, defaultEnd);
 }
 
 function calculateDeaths(){
-	deaths = calculateThing(0, 300000, new Date("Oct 01, 2010"), new Date("Oct 01, 2011"));
+	deaths = calculateThing(0, 300000, defaultStart, defaultEnd);
 	distanceToNextDeath = Math.floor(deaths + 1) - deaths;
 
 
 
-	totalTime = new Date("Oct 01, 2011") - new Date("Oct 01, 2010");
+	totalTime = defaultEnd - defaultStart;
 	timePerDeath = 1 / (300000 / totalTime);
 
 	timetodeath = distanceToNextDeath * timePerDeath; // in milliseconds
@@ -43,7 +45,7 @@ function calculateDeaths(){
 }
 
 function calculateRefugees() {
-	refugees = calculateThing(0, 20000000, new Date("Oct 01, 2010"), new Date("Oct 01, 2011"));
+	refugees = calculateThing(0, 4243902.44, defaultStart, defaultEnd);
 }
 
 function updateTicker(a){
