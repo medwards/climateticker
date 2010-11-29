@@ -1,6 +1,5 @@
 body {
-	background: #4d1d26 url(http://climateticker.walledcity.ca/assets/page_bg.jpg) repeat;
-	background-position: right -300px;
+	background: #4d1d26 url(images/GP022MN-SMmobile.jpg) repeat;
 	font: 14px helvetica, arial, sans-serif;
 	color: #464544;
 	margin: 0;
@@ -19,9 +18,9 @@ body {
 }
 
 #header h1 strong a {
-	background-color: #232323;
+	background-color: #000;
 	border-bottom: 1 px solid #666;
-	color: #fff;
+	color: #FFE600;
 	display: block;
 	font-weight: bold;
 	margin: 0;
@@ -32,6 +31,7 @@ body {
 	font-size: 16px;
 	background-image: -webkit-gradient(linear, left top left bottom, from(#fff), to(#999));
 }
+
 
 ul b { 
 	margin: -16px;
@@ -72,6 +72,7 @@ pre, #notesdialog, #refugeesembed, #deathsembed, #costembed, #metainfo, #about, 
 }
 
 #refugees {
+	width: 100%;
 	background-color: #fff;
 	padding: 10px;
 	margin-top: 5px;
@@ -122,4 +123,6 @@ pre, #notesdialog, #refugeesembed, #deathsembed, #costembed, #metainfo, #about, 
 	font-weight: bold;
 	text-transform: uppercase;
 }
+
+table { width: 90%; }
 
