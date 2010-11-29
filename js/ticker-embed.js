@@ -5,8 +5,8 @@ var refugees = 0;
 var tickerStarted = false; // bit of a hack but the instructions allow people to call updateTicker more than once which can mean there might be a lot of timers
 //var defaultStart = new Date("Nov 26, 2009, 18:00:00");
 //var defaultEnd = new Date("Nov 26, 2010, 18:00:00");
-var defaultStart = Date("Nov 29, 2010, 10:00:00");
-var defaultEnd = Date("Nove 29, 2010, 10:00:00");
+var defaultStart = new Date("Nov 29, 2010, 10:00:00");
+var defaultEnd = new Date("Nove 29, 2010, 10:00:00");
 
 function addCommas(nStr)
 {

@@ -5,8 +5,8 @@ var refugees = 0;
 //var defaultStart = new Date("Nov 26, 2009, 18:00:00");
 //var defaultEnd = new Date("Nov 26, 2010, 18:00:00");
 
-var defaultStart = Date("Nov 29, 2010, 10:00:00");
-var defaultEnd = Date("Nov 29, 2011, 10:00:00");
+var defaultStart = new Date("Nov 29, 2010, 9:44:00");
+var defaultEnd = new Date("Nov 29, 2011, 10:00:00");
 
 
 $.fn.digits = function(precision, prefix){
@@ -67,6 +67,11 @@ function updateTicker(a){
 	setTimeout("updateTicker("+a+");",a);
 }
 
-$(function() { 
-	updateTicker(100);
+$(function() {
+	today = new Date();
+	if(today < defaultStart) {
+		setTimeout("updateTicker(" + 100 + ");", defaultStart - today);
+	} else {
+		updateTicker(100);
+	}
 });
