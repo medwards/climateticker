@@ -1,3 +1,7 @@
+#hidetext-screen {
+	display: none;
+}
+
 html, body, h1, h2, h3, h4, ul, li {
 	margin: 0 auto;
 	padding: 0;
@@ -35,7 +39,6 @@ body {
 
 /** layout **/
 #wrapper {
-	/* width: 678px; */
 	min-height: 750px;
 	_height: 750px;
 	/* background: url(images/header.jpg) no-repeat;*/
@@ -49,12 +52,13 @@ h1 {
 	text-align: center;
 }
 
-h1 em {
+h1 em, h1 strong a {
 	color: #ffffff;
 	font-weight: bold;
 	font-style: normal;
 	position: relative;
 	top: -15px;
+	text-decoration: none;
 }
 
 #header h1 em a { text-decoration: none; }
@@ -66,7 +70,6 @@ h1 em {
   float: right;
   top: 0px;
   left: 335px;
-  /* width: 500px;*/
 }
 #nav li {
   float: left;
@@ -93,7 +96,6 @@ h1 em {
 #topcon {
   margin-top: 10px;
   background: url(container.png) no-repeat;
-  width: 427px;
   float: right;
   color: #fff;
 }
@@ -109,7 +111,7 @@ h1 em {
 /** Body **/
 
 #content {
-  /* width: 710px; */
+
   width: 100%;
   color: #fff;
 }
@@ -133,6 +135,8 @@ h1 em {
 /** footer **/
 #footer {
   text-align: center;
+  width:90%;
+  margin: 0 auto;
 }
 #footer p, #footer ul {
   margin: 0.8em;
@@ -145,9 +149,33 @@ h1 em {
   list-style: none;
 }
 
-.ticker {  margin: 0 auto; color: white; margin-top: 5px; height: 115px; border: 1px solid black; padding: 20px; padding-top: 15px; padding-bottom: 10px; background: transparent url(black-diag.png); }
-.ticker .title { text-align: center; line-height: 1em; font-size: 3.5em; font-weight: bold;  height: 40px;}
-.ticker .number, .ticker .time span { text-align: center; font-size: 5em; font-weight: bold; color: red; margin-top: 0px; margin-bottom: 30px; }
+.ticker {  
+  margin: 0 auto; 
+  color: white; 
+  margin-top: 5px; 
+  height: 115px; 
+  border: 1px solid black; 
+  padding: 20px; 
+  padding-top: 15px; 
+  padding-bottom: 10px; 
+  background: transparent url(black-diag.png); 
+}
+
+.ticker .title { 
+  text-align: center; 
+  line-height: 1em; 
+  font-size: 3.5em; 
+  font-weight: bold;  
+  height: 40px;
+}
+
+.ticker .number, .ticker .time span { 
+  text-align: center; 
+  font-size: 5em; 
+  font-weight: bold; 
+  color: red; 
+  margin-top: 0px; 
+  margin-bottom: 30px; }
 
 .embed a, .embed a:hover {
 	text-decoration: none;
@@ -160,11 +188,15 @@ h1 em {
 
 .ticker .embed { float: right; font-weight: bold;}
 
-#deaths { width: 650px; }
+#deaths { 
+	width: 70%; 
+}
+
 #deaths .number, #deaths .time span {text-align: left; }
-#cost { width: 524px; }
+
+#cost {  }
 #cost .title { font-size: 2.2em;}
-#refugees { width: 390px; }
+#refugees { }
 
 #deaths .number { float: right; }
 
@@ -173,19 +205,28 @@ h1 em {
 }
 
 #info {
-	width: 300px;
+	width: 30%;
 	height: 90px;
 	padding-top: 0px;
 }
 
-#info p { text-align: center; }
-#info table { margin-left: auto; margin-right: auto; }
+#info p { 
+	text-align: center; 
+}
+
+#info table { 
+	margin-left: auto; 
+	margin-right: auto; }
 
 .footnotes { font-size: xx-small; }
 
 .dialog ul { margin-left: 25px; }
 
-pre { width: 500px; overflow: auto; border: 1px dotted black; padding: 5px;}
+pre { 
+	overflow: auto; 
+	border: 1px dotted black; 
+	padding: 5px;
+}
 
 #mobile-more-info {
 	display: none;
@@ -208,10 +249,9 @@ p.quoted {
 
 #footer p#footnote { font-size: medium; }
 
-sup,
-sub {
+sup, sub {
 	height: 0;
-	line-height: 1;
+	line-height: 1px;
 	vertical-align: baseline;
 	_vertical-align: bottom;
 	position: relative;
